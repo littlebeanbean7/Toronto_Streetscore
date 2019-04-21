@@ -1,7 +1,7 @@
 import os
 from PIL import Image
 
-filepath = "Desktop/boston/image"
+filepath = "boston_test/image"
 
 # Loop through all provided arguments
 for filename in os.listdir(filepath):
@@ -20,11 +20,11 @@ for filename in os.listdir(filepath):
         continue
 
     # Perform operations on the image here
-    image = image.crop((0, 0, 224, 224))
+    image = image.crop((0, 0, 328, 328))
 
     # Split our origional filename into name and extension
     name, extension = os.path.splitext(filename)
 
     # Save the image as "(origional_name)_thumb.jpg
     print(name + '_cropped.jpg')
-    image.save(os.path.join("Desktop/boston/cropped_image", name + '_cropped.jpg'))
+    image.save(os.path.join("boston_test/cropped_image", name + '_cropped.jpg'))
