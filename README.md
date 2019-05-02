@@ -36,7 +36,7 @@ Merges the fetched train / test images with target variable. You should use this
 *  Toronto_sample.ipynb  
 Subsampled 2100 Toronto geolocations, with which fetched 2034 Toronto images. Those images would be used to deploy our final model for the predictions of Perceived Toronto Street View. 
 
-### CNN model building:
+### Model Building:
 
 ##### Transfer Learning: 
 
@@ -50,8 +50,6 @@ Trains the models using the pretrained weights, conducts 5-fold cross-validation
 Generates predictions by each of model on the test set. 
 
 ##### Building our own CNN: 
-
-*  Keras-CNN_Tested on Toronto images.ipynb  
 *  CNN_Tested_Explained_with_Toronto_images.ipynb  
 Builds a CNN model by ourselves and explains it using LIME.
 
@@ -60,7 +58,6 @@ Builds a CNN model by ourselves and explains it using LIME.
 Conducts ensemble learning methods including: Averaging ensemble; Conditional ensemble; and Weighted ensemble; Calculates each model's confusion matrix and performance;  Finds one final model with relatively best prediction of both safety = 0 and safety =1.
  
 ### Model explanation:
-*  Keras-CNN_Tested on Toronto images.ipynb 
 *  CNN_Tested_Explained_with_Toronto_images.ipynb  
 Builds a CNN model by ourselves and explains it using LIME.
 
