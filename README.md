@@ -8,23 +8,23 @@ We apply deep Convolutional Neural Network (CNN) techniques on street view image
 ## codes/    
 
 ### Data Exploration:
-* PlacePulse1.0_explore.ipynb: 
+* PlacePulse1.0_explore.ipynb 
 Explores the data structure of the original data - PlacePulse1.0 used by the Streetscore project. 
 
-* Streetscore_create_target_label.ipynb: 
+* Streetscore_create_target_label.ipynb  
 Generates a binary 'safety' label.
  
 ### Data Preparation:
-* Boston_Stratified_Sampling.ipynb: 
+* Boston_Stratified_Sampling.ipynb  
 Stratified sampling 20,000 samples from the Boston data predicted by the Streetscore project considering two factors at the same time: 1). Portion of zone classes of Toronto and 2). Portion of Target “safety” variable.
 
-* boston_split_train_test.ipynb: 
+* boston_split_train_test.ipynb  
 Splits the downsampled 20,000 boston samples into 80 : 20 as training and test sets, so as to use the trainings and test sets to fetch images.
 
-* fetchimage.py: 
+* fetchimage.py  
 Fetches images using Google Street View Static API
 
-*  cropimage.py: 
+*  cropimage.py  
 Crops out the Google Logo on each image
 
 *  check_fetched_images_and_merge_with_target.ipynb  
