@@ -8,7 +8,7 @@ We apply deep Convolutional Neural Network (CNN) techniques on street view image
 ## codes/    
 
 ### Data Exploration:
-* PlacePulse1.0_explore.ipynb 
+* PlacePulse1.0_explore.ipynb   
 Explores the data structure of the original data - PlacePulse1.0 used by the Streetscore project. 
 
 * Streetscore_create_target_label.ipynb  
