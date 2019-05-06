@@ -54,8 +54,11 @@ Generates predictions by each of model on the test set.
 Builds a CNN model by ourselves and explains it using LIME.
 
 ### Ensemble:
-*  ensemble.ipynb  
+*  ensemble_boston_test.ipynb 
 Conducts ensemble learning methods including: Averaging ensemble; Conditional ensemble; and Weighted ensemble; Calculates each model's confusion matrix and performance;  Finds one final model with relatively best prediction of both safety = 0 and safety =1.
+
+*  ensemble_toronto.ipynb   
+Applies the best ensemble strategy found in ensemble_boston_test.ipynb on Toronto images.
  
 ### Model explanation:
 *  CNN_Tested_Explained_with_Toronto_images.ipynb  
