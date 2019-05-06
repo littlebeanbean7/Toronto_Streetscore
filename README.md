@@ -68,9 +68,6 @@ Interprets model predictions using the LIME package.
 ### Boston Data  
 
 ##### Data produced by target column generation:   
-*  boston_ny_safety.csv   
-Boston and New York City data with a newly created target column - safety.
-
 *  boston_safety.csv   
 Boston data with a newly created target column - safety.
 
