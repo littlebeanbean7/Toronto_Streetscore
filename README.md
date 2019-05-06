@@ -1,11 +1,11 @@
 # Toronto Streetscore: Predicting Perceived Street Safety Using CNN
 
 ## Overview
-This project aims to build an explainable machine learning model that could predict people's perceived safety toward streets views.
-We apply deep Convolutional Neural Network (CNN) techniques on street view images fetched using Google Street View API.
+This project aims to build an explainable machine learning model that could predict people's perceived safety towards streets views.
+We apply deep Convolutional Neural Network (CNN) techniques on street view images fetched using Google Street View Static API.
 
 
-## codes/    
+## code/    
 
 ### Data Exploration:
 * PlacePulse1.0_explore.ipynb   
@@ -38,8 +38,7 @@ Subsampled 2100 Toronto geolocations, with which fetched 2034 Toronto images. Th
 
 ### Model Building:
 
-##### Transfer Learning: 
-
+##### Transfer Learning:   
 *  ResNeXt50ClassifierTemplate.py  
 Generates a ResNeXt50 neural network with pretrained weights from Keras.
 
@@ -61,6 +60,47 @@ Conducts ensemble learning methods including: Averaging ensemble; Conditional en
 Applies the best ensemble strategy found in ensemble_boston_test.ipynb on Toronto images.
  
 ### Model explanation:
-*  CNN_Tested_Explained_with_Toronto_images.ipynb  
-Builds a CNN model by ourselves and explains it using LIME.
+*  Model interpretation generated using Lime package.ipynb   
+Interprets model predictions using the LIME package.
+
+## data/  
+
+### Boston Data  
+
+##### Data produced by target column generation:   
+*  boston_safety.csv   
+Boston data with a newly created target column - safety.
+
+##### Data produced by stratified sampling:   
+*  boston_safety_subsample.csv     
+20000 downsampled Boston data samples, achieved by stratified sampling based on both the safety and the subdistrict columns.
+
+##### Data produced by Train / Test split:   
+*  boston_train_list.csv    
+16000 Boston Train data samples (80% of the 20000) used to fetch Boston Train images.
+
+*  boston_test_list.csv	    
+4000 Boston Test data samples (20% of the 20000) used to fetch Boston Test images.
+
+##### Data produced by image fetching:  
+*  boston_train_fetched_with_target.csv	   
+Boston Train images fetched using Google Street View Static API, merged with target column (safety).
+
+*  boston_test_fetched_with_target.csv	   
+Boston Test images fetched using Google Street View Static API, merged with target column (safety).
+
+##### Data produced by ensembling:   
+*  final_pred_boston_test_weighted_ensemble2.csv	   
+Final ensembled predictions on Boston Test images. 
+
+### Toronto Data
+
+##### Data produced by downsampling:   
+*  Toronto2100_sample.csv    
+2100 downsampled Toronto data samples used to fetch Toronto street view images.
+
+##### Data produced by ensembling:   
+*  final_pred_toronto.csv	   
+Final ensembled predictions on the Toronto street view images. 
+
 
