@@ -4,6 +4,8 @@
 This project aims to build an explainable machine learning model that could predict people's perceived safety towards streets views.
 We apply deep Convolutional Neural Network (CNN) techniques on street view images fetched using Google Street View Static API.
 
+<img src = "data/toronto_pred_800_600.png">
+Fig 1. Our models' final predictions of perceived safety on the street view of 2034 Toronto geolocations.
 
 ## code/    
 
@@ -103,4 +105,6 @@ Final ensembled predictions on Boston Test images.
 *  final_pred_toronto.csv	   
 Final ensembled predictions on the Toronto street view images. 
 
-
+##### Image produced by visualization:    
+*  toronto_pred_800_600.png   
+Visualizes our models' final predictions of perceived safety on the street view of 2034 Toronto geolocations.
