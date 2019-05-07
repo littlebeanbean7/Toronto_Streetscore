@@ -5,7 +5,7 @@ This project aims to build an explainable machine learning model that could pred
 We apply deep Convolutional Neural Network (CNN) techniques on street view images fetched using Google Street View Static API.
 
 <img src = "data/toronto_pred_800_600.png">
-Fig 1. Our models' final predictions of perceived safety on the street view of 2034 Toronto geolocations.
+Fig 1. Map of our models' final predictions of perceived safety on street view of 2034 Toronto geolocations.
 
 ## code/    
 
@@ -55,7 +55,7 @@ Generates predictions by each of model on the test set.
 Builds a CNN model by ourselves and explains it using LIME.
 
 ### Ensemble:
-*  ensemble_boston_test.ipynb 
+*  ensemble_boston_test.ipynb   
 Conducts ensemble learning methods including: Averaging ensemble; Conditional ensemble; and Weighted ensemble; Calculates each model's confusion matrix and performance;  Finds one final model with relatively best prediction of both safety = 0 and safety =1.
 
 *  ensemble_toronto.ipynb   
