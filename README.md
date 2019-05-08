@@ -5,7 +5,7 @@ This project aims to build an explainable machine learning model that could pred
 We apply deep Convolutional Neural Network (CNN) techniques on street view images fetched using Google Street View Static API.
 
 <img src = "data/toronto_pred_800_600.png">
-Fig 1. Our models' final predictions of perceived safety on the street view of 2034 Toronto geolocations.
+Fig 1. Map of our models' final predictions of perceived safety on street view of 2034 Toronto geolocations.
 
 ## code/    
 
@@ -27,13 +27,10 @@ Splits the downsampled 20,000 boston samples into 80 : 20 as training and test s
 Fetches images using Google Street View Static API
 
 *  cropimage.py  
-Crops out the Google Logo on each image
-
-*  check_fetched_images_and_merge_with_target.ipynb  
-Checks how many images were fetched and merges the fetched images with target variable. You should use this script if you are saving all Boston images into one folder. 
+Crops out the Google Logo on each image.
 
 *  merge_fetched_train_test_image_with_target.ipynb  
-Merges the fetched train / test images with target variable. You should use this script if you are saving Boston images into two  (train and test) seperate folders. 
+Merges the fetched train / test images with target variable; Calculates fetched images' updated year.
 
 *  Toronto_sample.ipynb  
 Subsampled 2100 Toronto geolocations, with which fetched 2034 Toronto images. Those images would be used to deploy our final model for the predictions of Perceived Toronto Street View. 
@@ -55,7 +52,7 @@ Generates predictions by each of model on the test set.
 Builds a CNN model by ourselves and explains it using LIME.
 
 ### Ensemble:
-*  ensemble_boston_test.ipynb 
+*  ensemble_boston_test.ipynb   
 Conducts ensemble learning methods including: Averaging ensemble; Conditional ensemble; and Weighted ensemble; Calculates each model's confusion matrix and performance;  Finds one final model with relatively best prediction of both safety = 0 and safety =1.
 
 *  ensemble_toronto.ipynb   
@@ -64,6 +61,10 @@ Applies the best ensemble strategy found in ensemble_boston_test.ipynb on Toront
 ### Model explanation:
 *  Model interpretation generated using Lime package.ipynb   
 Interprets model predictions using the LIME package.
+
+### Visualization:
+*  map_toronto_pred.R   
+Visualizes our models' final predictions of perceived safety on the street view of 2034 Toronto geolocations.
 
 ## data/  
 
@@ -85,11 +86,13 @@ Boston data with a newly created target column - safety.
 4000 Boston Test data samples (20% of the 20000) used to fetch Boston Test images.
 
 ##### Data produced by image fetching:  
-*  boston_train_fetched_with_target.csv	   
-Boston Train images fetched using Google Street View Static API, merged with target column (safety).
+*  boston_train_metadata.json   
+*  boston_test_metadata.json  
+The json file created while fetching Boston Train and Test images using Google Street View Static API. It documents which images are successfully fetched and which are not, as well as the images' matadata such as the update date.
 
+*  boston_train_fetched_with_target.csv	   
 *  boston_test_fetched_with_target.csv	   
-Boston Test images fetched using Google Street View Static API, merged with target column (safety).
+Boston Train and Test images fetched using Google Street View Static API (the above metadata.json files where status == 'okay'), merged with target column (safety).
 
 ##### Data produced by ensembling:   
 *  final_pred_boston_test_weighted_ensemble2.csv	   
@@ -101,10 +104,14 @@ Final ensembled predictions on Boston Test images.
 *  Toronto2100_sample.csv    
 2100 downsampled Toronto data samples used to fetch Toronto street view images.
 
+##### Data produced by image fetching:   
+*  toronto_metadata.json    
+The json file created while fetching images using Google Street View Static API. It documents which images are successfully fetched and which are not, as well as the images' matadata such as the update date.
+
 ##### Data produced by ensembling:   
 *  final_pred_toronto.csv	   
 Final ensembled predictions on the Toronto street view images. 
 
 ##### Image produced by visualization:    
 *  toronto_pred_800_600.png   
-Visualizes our models' final predictions of perceived safety on the street view of 2034 Toronto geolocations.
+Map visualization of our models' final predictions of perceived safety on the street view of 2034 Toronto geolocations.
