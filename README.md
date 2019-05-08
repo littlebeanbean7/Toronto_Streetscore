@@ -115,3 +115,6 @@ Final ensembled predictions on the Toronto street view images.
 ##### Image produced by visualization:    
 *  toronto_pred_800_600.png   
 Map visualization of our models' final predictions of perceived safety on the street view of 2034 Toronto geolocations.
+
+### models
+Our models are available here: https://drive.google.com/drive/folders/1kTHfxkaQPnP62-EWS7aY1qPQs_qv4Xat
