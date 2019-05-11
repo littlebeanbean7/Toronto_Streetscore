@@ -58,7 +58,7 @@ Conducts ensemble learning methods including: Averaging ensemble; Conditional en
 *  ensemble_toronto.ipynb   
 Applies the best ensemble strategy found in ensemble_boston_test.ipynb on Toronto images.
  
-### Model explanation:
+### Model Explanation:
 *  Model interpretation generated using Lime package.ipynb   
 Interprets model predictions using the LIME package.
 
