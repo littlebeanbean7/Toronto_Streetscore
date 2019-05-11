@@ -1,7 +1,7 @@
 # Toronto Streetscore: Predicting Perceived Street Safety Using CNN
 
 ## Overview
-This project aims to build an explainable machine learning model that could predict people's perceived safety towards streets views.
+This project aims to build an explainable machine learning model that could predict people's perceived safety towards Toronto streets views.
 We apply deep Convolutional Neural Network (CNN) techniques on street view images fetched using Google Street View Static API.
 
 <img src = "data/toronto_pred_800_600.png">
@@ -118,3 +118,8 @@ Map visualization of our models' final predictions of perceived safety on the st
 
 ### models
 Our models are available here: https://drive.google.com/drive/folders/1kTHfxkaQPnP62-EWS7aY1qPQs_qv4Xat
+
+### writeups
+* Paper: https://docs.google.com/document/d/1TW0PlyCy_hRg3bUiOsNXf7aInYeLko68CiZ3EDpKrOw
+
+* PPT: https://docs.google.com/presentation/d/1Rv5pszoZSt6_ktrN9S77wg0yHl-KVrzOEOx5rt-lD_k
