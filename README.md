@@ -62,6 +62,9 @@ Applies the best ensemble strategy found in ensemble_boston_test.ipynb on Toront
 *  Model interpretation generated using Lime package.ipynb   
 Interprets model predictions using the LIME package.
 
+*  CNN_Lime_interpretations.ipynb	   
+Some qualitative analyses of LIME's interpretation of our models' predictions on Toronto street view images. 
+
 ### Visualization:
 *  map_toronto_pred.R   
 Visualizes our models' final predictions of perceived safety on the street view of 2034 Toronto geolocations.
@@ -116,10 +119,10 @@ Final ensembled predictions on the Toronto street view images.
 *  toronto_pred_800_600.png   
 Map visualization of our models' final predictions of perceived safety on the street view of 2034 Toronto geolocations.
 
-### models
+## models
 Our models are available here: https://drive.google.com/drive/folders/1kTHfxkaQPnP62-EWS7aY1qPQs_qv4Xat
 
-### writeups
+## writeups
 * Paper: https://docs.google.com/document/d/1TW0PlyCy_hRg3bUiOsNXf7aInYeLko68CiZ3EDpKrOw
 
 * PPT: https://docs.google.com/presentation/d/1Rv5pszoZSt6_ktrN9S77wg0yHl-KVrzOEOx5rt-lD_k
