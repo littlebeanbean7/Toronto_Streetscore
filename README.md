@@ -8,10 +8,10 @@ We apply deep Convolutional Neural Network (CNN) techniques on street view image
 Fig 1. Map of our models' final predictions of perceived safety on street view of 2034 Toronto geolocations.
 
 ## writeups/
-* paper_street_safety.pdf   
+* paper_street_safety.pdf    
 Final project report.
 
-* ppt_street_safety.pdf
+* ppt_street_safety.pdf    
 Final presentation slides.
 
 ## code/    
@@ -55,10 +55,10 @@ Trains the models using the pretrained weights, conducts 5-fold cross-validation
 Generates predictions by each of model on the test set. 
 
 ##### Building Self-Designed CNN: 
-*  CNN_model1.ipynb
+*  CNN_model1.ipynb    
 Builds CNN model1 (with Boston Train Images as the training set), and predicts on Boston Test Images.
 
-*  CNN_model2.ipynb  
+*  CNN_model2.ipynb    
 Builds CNN model2 (with Boston Train and Test Images as the training set), predicts on Toronto Images.
 
 ### Ensemble:
