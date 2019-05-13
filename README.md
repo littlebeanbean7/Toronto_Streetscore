@@ -59,7 +59,7 @@ Generates predictions by each of model on the test set.
 Builds CNN model1 (with Boston Train Images as the training set), and predicts on Boston Test Images.
 
 *  CNN_model2.ipynb    
-Builds CNN model2 (with Boston Train and Test Images as the training set), predicts on Toronto Images.
+Builds CNN model2 (with Boston Train and Test Images as the training set), and predicts on Toronto Images.
 
 ### Ensemble:
 *  ensemble_boston_test.ipynb   
