@@ -7,7 +7,7 @@ We apply deep Convolutional Neural Network (CNN) techniques on street view image
 <img src = "data/toronto_pred_800_600.png">
 Fig 1. Map of our models' final predictions of perceived safety on street view of 2034 Toronto geolocations.
 
-## writeups/
+## writeup/
 * paper_street_safety.pdf    
 Final project report.
 
